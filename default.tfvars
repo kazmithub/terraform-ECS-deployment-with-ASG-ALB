@@ -1,0 +1,5 @@
+dockerImage = "nginx"
+dockerImageTag = "latest"
+countTasks = "3"
+desiredCapacity = "3"
+namePrefix = "tf-def"
