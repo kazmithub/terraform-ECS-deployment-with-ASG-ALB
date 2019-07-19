@@ -20,10 +20,30 @@ Before reading this,
 
 ## Modules
 
-| Module Name   | Function                                                                                    |
-| ------------- | ------------------------------------------------------------------------------------------- |
-| VPC  | Content Cell  |
-| Content Cell  | Content Cell  |
+| Module Name   | Function                                                  |
+| ------------- | ----------------------------------------------------------|
+| vpc           | - A VPC with a provided CIDR.                             |
+|               | - Two public Subnets within the above VPC.                |
+|               | - Internet Gateway for internet access.                   |
+|               | - Route table for routing.                                |
+|               | - DHCP options.                                           |
+|               | - Security groups.                                        |
+|               |                                                           |
+| iam           | - Instance Role for ECS cluster with a policy attached.   |
+|               | - Role for an ECS service.                                |
+|               |                                                           |
+| ecs           | - An ECS cluster.                                         |
+|               | - Task Definition with container definition.              |
+|               | - An ECS Service.                                         |
+|               |                                                           |
+| ags-alb       | An ASG inside which                                       |
+|               | - Launch configuration                                    |
+|               | - Autoscaling group                                       |
+|               | An ALB inside which                                       |
+|               | - A listener                                              |
+|               | - A target group                                          |
+|               | - An application load balancer                            |
+| Content Cell  | Content Cell                                              |
 
 ## Deployment
 
