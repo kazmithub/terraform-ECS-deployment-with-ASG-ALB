@@ -1,0 +1,10 @@
+# terraform files and folders
+
+.terraform
+terraform.tfstate.d
+
+# extra variable file
+ws2.tfvars
+
+# Random
+.DS_Store
