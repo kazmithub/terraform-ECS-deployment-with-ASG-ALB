@@ -35,12 +35,12 @@ Definition to start the containers on ECS and keeps them running.
 More tasks can be added to the service using the count variable and the nameTaskDef variable which
 defines the task definitions of the running tasks.
 
-![alt text](https://github.com/kazmithub/terraform-ecs-deployment/blob/master/ecs3.png)
+![alt text](https://github.com/kazmithub/terraform-ECS-deployment-with-ASG-ALB/blob/master/ecs3.png)
 
 Task Definition is found in ./modeules/ecs/templates/taskdef.tpl and /modules/ecs/main.tf and can be referred in 
 [documentation](https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html).
 
-![alt text](https://github.com/kazmithub/terraform-ecs-deployment/blob/master/ecs1.png)
+![alt text](https://github.com/kazmithub/terraform-ECS-deployment-with-ASG-ALB/blob/master/ecs1.png)
 
 The service and the cluster are inside /modules/ecs/main.tf where the basic configuration is placed. The documentation
 of the service and cluster
@@ -52,7 +52,7 @@ Load balancing and autoscaling are inside the asg-alb block. The load balancer i
 requires listener and target group. All of which are configured in the block. The running containers are using port 80
 and 8080 of the host. 
 
-![alt text](https://github.com/kazmithub/terraform-ecs-deployment/blob/master/alb1.png)
+![alt text](https://github.com/kazmithub/terraform-ECS-deployment-with-ASG-ALB/blob/master/alb1.png)
 
 ## Variable declaration
 
