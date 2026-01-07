@@ -43,7 +43,6 @@ Before reading this,
 |               | - A listener                                              |
 |               | - A target group                                          |
 |               | - An application load balancer                            |
-| Content Cell  | Content Cell                                              |
 
 ## Deployment
 
