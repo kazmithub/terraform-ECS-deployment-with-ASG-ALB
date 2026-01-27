@@ -107,3 +107,4 @@ State Management has numerous advantages like
 The backend lock is placed inside the backend.tf file. It is better to make the bucket and DynamoDB table manuallly to 
 avoid any mishaps. 
 
+
